@@ -1,3 +1,5 @@
+/* this program calculates how many phones you can buy
+after tax, you can enter an initial @bank_balance*/
 const TAX_RATE = 0.08;
 const ACCESSORY_PRICE = 9.99;
 const PHONE_PRICE = 99.99;
