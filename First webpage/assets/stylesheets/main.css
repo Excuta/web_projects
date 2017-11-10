@@ -122,9 +122,12 @@ margin-bottom: 22px;
   ================================
 */
 
-.primary-footer small {
+.primary-footer {
   padding-top: 44px;
   padding-bottom: 44px;
+}
+
+.primary-footer small {
   float: left;
 }
 
