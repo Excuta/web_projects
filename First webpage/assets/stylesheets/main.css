@@ -103,3 +103,49 @@ margin-bottom: 22px;
 .hero {
   padding: 22px 80px 66px 80px
 }
+
+/*
+  ================================
+  Primary Header
+  ================================
+*/
+
+.logo {
+  border: 4px solid #648880;
+  padding: 40px 0 22px 0;
+  float: left;
+}
+
+/*
+  ================================
+  Primary Footer
+  ================================
+*/
+
+.primary-footer small {
+  padding-top: 44px;
+  padding-bottom: 44px;
+  float: left;
+}
+
+/*
+  ================================
+  Clearfix
+  ================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+
+}
+
+.group {
+  clear: both;
+  *zoom: 1;
+}
