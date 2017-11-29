@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,4 +45,177 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+/*
+  ========================================
+  Customer Styles
+  ========================================
+*/
+.primary {
+  background: #08A1DB;
+}
+
+.secondary {
+  background: #0089CD;
+}
+body {
+  color: #fff;
+  font: 400 16px/22px "Source Sans Pro", "Helvetica Neue", Arial;
+}
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+h1, h2, h3, h4 {
+  color: #fff;
+}
+h1, h2, h3, h3, p {
+  margin-bottom: 22px;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 26px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+p {
+  text-align: center;
+  font-size: 21px;
+}
+.text-offset {
+  font-weight: 200;
+  padding: 0 5px;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container,
+.grid {
+  width: 960px;
+  margin: 0 auto;
+}
+.center {
+  margin: auto;
+  width: 50%;
+}
+.container {
+  padding: 0 30px;
+}
+
+.grid,
+.col-1-3,
+.col-2-3 {
+  padding: 0 15px;
+}
+.col-1-3,
+.col-2-3 {
+  vertical-align: top;
+  display: inline-block;
+}
+.col-1-3 {
+  width: 33.3%;
+}
+.col-2-3 {
+  width: 66.6%;
+}
+.first{
+  text-align: center;
+  display: inline-block;
+  width: 30%;
+}
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+.nav {
+  text-align: left;
+}
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.nav li:first-child {
+  margin-left: 0;
+}
+/*
+  ========================================
+  Header
+  ========================================
+*/
+.header {
+  vertical-align: middle;
+  padding: 15px;
+}
+.header-secondary {
+  padding: 5px;
+  vertical-align: middle;
+}
+.header .container h1 {
+  margin-bottom: 16px;
+}
+/*
+  ========================================
+  Main
+  ========================================
+*/
+.main {
+  text-align: center;
+  min-width: 960px;
+}
+.main-body {
+  background: #fff;
+  min-width: 960px;
+}
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+.footer,
+.footer-secondary {
+  vertical-align: middle;
+}
+.footer {
+  padding: 30px;
+}
+.footer-secondary {
+  padding: 5px;
+  vertical-align: bottom;
+  margin-bottom: 0;
+}
+.profiles {
+  font-size: 18px;
+}
+.contact p {
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 0;
 }
