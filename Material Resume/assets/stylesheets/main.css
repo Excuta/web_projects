@@ -88,8 +88,7 @@ h4 {
   font-size: 18px;
 }
 p {
-  text-align: center;
-  font-size: 21px;
+  font-size: 16px;
 }
 .text-offset {
   font-weight: 200;
@@ -124,7 +123,7 @@ p {
 .grid,
 .col-1-3,
 .col-2-3 {
-  padding: 0 15px;
+  padding-right: 15px;
 }
 .col-1-3,
 .col-2-3 {
@@ -132,10 +131,10 @@ p {
   display: inline-block;
 }
 .col-1-3 {
-  width: 33.3%;
+  width: 30%;
 }
 .col-2-3 {
-  width: 66.6%;
+  width: 69.9%;
 }
 .first{
   text-align: center;
@@ -174,11 +173,20 @@ p {
   padding: 15px;
 }
 .header-secondary {
-  padding: 5px;
+  padding: 10px;
   vertical-align: middle;
 }
 .header .container h1 {
   margin-bottom: 16px;
+}
+.header img {
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin: -80px 60px 0 0;
 }
 /*
   ========================================
@@ -192,6 +200,7 @@ p {
 .main-body {
   background: #fff;
   min-width: 960px;
+  color: #000;
 }
 /*
   ========================================
@@ -218,4 +227,52 @@ p {
   font-size: 16px;
   line-height: 21px;
   margin-bottom: 0;
+}
+/*
+  ========================================
+  Cover Letter aka hello
+  ========================================
+*/
+.letter-meta {
+  text-align: left;
+  background: #ccc;
+}
+.letter-meta h5 {
+  color: #08A1DB;
+  margin: 15px 0;
+}
+
+.letter-meta div {
+  margin-bottom: 45px;
+  border-bottom: 1px solid #aaa;
+}
+
+.letter-meta div:last-child {
+  border-bottom: 0;
+}
+.letter-body {
+  padding: 15px;
+}
+.letter-body p {
+  border-left: 1px solid #aaa;
+  padding-left: 30px;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
 }
