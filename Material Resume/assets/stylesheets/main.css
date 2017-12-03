@@ -195,11 +195,12 @@ p {
 */
 .main {
   text-align: center;
-  min-width: 960px;
+  width: 960px;
+  margin: 0 auto;
 }
 .main-body {
   background: #fff;
-  min-width: 960px;
+  width: 960px;
   color: #000;
 }
 /*
@@ -235,7 +236,6 @@ p {
 */
 .letter-meta {
   text-align: left;
-  background: #ccc;
 }
 .letter-meta h5 {
   color: #08A1DB;
@@ -256,6 +256,11 @@ p {
 .letter-body p {
   border-left: 1px solid #aaa;
   padding-left: 30px;
+}
+.letter-side {
+  display: inline-block;
+  background: #F0F0F0;
+  float: left;
 }
 
 /*
