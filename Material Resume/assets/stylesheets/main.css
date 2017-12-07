@@ -59,10 +59,12 @@ table {
   background: #0089CD;
 }
 body {
-  background: -webkit-linear-gradient(left, #F0F0F0 40%, #fff 33.4%, #fff);
-  background:    -moz-linear-gradient(left, #F0F0F0 40%, #fff 33.4%, #fff);
-  background:      -o-linear-gradient(left, #F0F0F0 40%, #fff 33.4%, #fff);
-  background:         linear-gradient(left, #F0F0F0 40%, #fff 33.4%, #fff);
+  /*background: -webkit-linear-gradient(to right, #F0F0F0 40%, #fff 33.4%, #fff);
+  background:    -moz-linear-gradient(to right, #F0F0F0 40%, #fff 33.4%, #fff);
+  background:      -o-linear-gradient(to right, #F0F0F0 40%, #fff 33.4%, #fff);
+  background:         linear-gradient(to right, #F0F0F0 40%, #fff 33.4%, #fff);
+  background-attachment: fixed;*/
+  background: #0089CD;
   font: 400 16px/22px "Source Sans Pro", "Helvetica Neue", Arial;
   margin: 0 auto;
 }
@@ -117,8 +119,7 @@ p {
   margin: 0 auto;
 }
 .center {
-  margin: auto;
-  width: 50%;
+  margin: 0 auto;
 }
 .container {
   padding: 0 0;
@@ -155,12 +156,12 @@ p {
   padding: 66px 0 44px 0;
 }
 .row-alt {
-  background: #cbe2c1;
-  background: -webkit-linear-gradient(left, #F0F0F0 40%, #fff 33.4%, #fff);
-  background:    -moz-linear-gradient(left, #F0F0F0 40%, #fff 33.4%, #fff);
-  background:      -o-linear-gradient(left, #F0F0F0 40%, #fff 33.4%, #fff);
-  background:         linear-gradient(left, #F0F0F0 40%, #fff 33.4%, #fff);
-  padding: 44px 0 22px 0;
+  background: #fff;
+  /*background: -webkit-linear-gradient(left, #F0F0F0 40%, #fff 40%, #fff 100%);
+  background:    -moz-linear-gradient(left, #F0F0F0 40%, #fff 40%, #fff 100%);
+  background:      -o-linear-gradient(left, #F0F0F0 40%, #fff 40%, #fff 100%);
+  background:         linear-gradient(left, #F0F0F0 40%, #fff 40%, #fff 100%);*/
+
 }
 /*
   ========================================
@@ -179,7 +180,7 @@ p {
 .nav li {
   display: inline-block;
   margin: 0 10px;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .nav li:first-child {
   margin-left: 0;
@@ -225,6 +226,7 @@ p {
   text-align: center;
   width: 960px;
   margin: 0 auto;
+  padding: 0 15px;
   color: #000;
 }
 /*
@@ -294,7 +296,6 @@ p {
 }
 .letter-side {
   display: inline-block;
-  background: #F0F0F0;
   /* inser float left */
 }
 .letter-style {
