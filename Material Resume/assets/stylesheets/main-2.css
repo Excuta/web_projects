@@ -1,0 +1,159 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+  ========================================
+  Customer Styles
+  ========================================
+Actually the whole body is colored by the secondary
+while all other colors are layered on top*/
+body {
+  background: #0089CD;
+  /*TODO ADD MAIN FONT */
+}
+/*
+    ==========================================
+    Page SKeleton
+    ============================================
+*/
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.primary-row,
+.secondary-row {
+    min-width: 960px;
+}
+.primary-row {
+    background: #08A1DB;
+}
+.secondary-row {
+    background: #0089CD;
+}
+.content-row-left,
+.content-row-right {
+    min-width: 480px;
+    min-height: 90%;
+    padding: 15px;
+}
+.content-row-left {
+    float: left;
+    max-width: 30%;
+    background: #F0F0F0;
+    box-shadow: inset -5px 0 5px #bbb;
+}
+.content-row-right {
+    float: right;
+    max-width: 70%;
+    background: #fff;
+}
+/*
+    ===================================
+    HEADER
+    ===================================
+*/
+.nav-header,
+.header {
+    vertical-align: middle;
+}
+.nav-header {
+    text-align: left;
+    padding: 15px;
+}
+.nav-header li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.nav-header li:first-child {
+    margin-left: 0;
+}
+.header {
+    padding: 30px;
+}
+/*  ======================================
+    Content
+    =======================================
+*/
+/*
+    ======================================
+    FOOTER
+    ======================================
+*/
+.footer-links li {
+    display: inline-block;
+    margin: 0 30px;
+}
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
