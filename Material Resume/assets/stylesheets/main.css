@@ -217,7 +217,7 @@ h4 {
     padding: 15px 0;
     text-align: center;
 }
-.footer-links li {
+.icons li {
     display: inline-block;
     margin: 0 116px;
     margin-top: 10px;
@@ -226,7 +226,20 @@ h4 {
     border-radius: 50%;
     background: #028CD5;
 }
-.footer-links img {
+.links {
+    text-align: left;
+}
+.links li {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 35px;
+    display: inline-block;
+}
+.second {
+    margin-left: 800px;
+}
+.icons img {
     width: 35px;
     height: 35px;
     margin-top: 10px;
