@@ -106,9 +106,9 @@ h4 {
 .content-row {
     color: #000;
     vertical-align: top;
-    background: -webkit-linear-gradient(to right, #F0F0F0 25%,#fff 25%, #fff);
-    background:    -moz-linear-gradient(to right, #F0F0F0 25%,#fff 25%, #fff);
-    background:         linear-gradient(to right, #F0F0F0 25%,#fff 25%, #fff);
+    background: -webkit-linear-gradient(to right, #F0F0F0, #fff);
+    background:    -moz-linear-gradient(to right, #F0F0F0, #fff);
+    background:         linear-gradient(to right, #F0F0F0, #fff);
     box-shadow: inset 0 10px 3px -5px #c1c1c1;
 }
 #wrapper {
