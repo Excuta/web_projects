@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,272 +50,201 @@ table {
   ========================================
   Customer Styles
   ========================================
-*/
-.primary {
-  background: #08A1DB;
+Actually the whole body is colored by the secondary
+while all other colors are layered on top*/
+body {
+    margin: 0 auto;
+    background: #028CD5;
+    color: #fff;
+    font: 300 16px/20px "Source Sans Pro", "Open Sans", arial, sans-serif;
 }
 
-.secondary {
-  background: #0089CD;
-}
-body {
-  /*background: -webkit-linear-gradient(to right, #F0F0F0 40%, #fff 33.4%, #fff);
-  background:    -moz-linear-gradient(to right, #F0F0F0 40%, #fff 33.4%, #fff);
-  background:      -o-linear-gradient(to right, #F0F0F0 40%, #fff 33.4%, #fff);
-  background:         linear-gradient(to right, #F0F0F0 40%, #fff 33.4%, #fff);
-  background-attachment: fixed;*/
-  background: #0089CD;
-  font: 400 16px/22px "Source Sans Pro", "Helvetica Neue", Arial;
-  margin: 0 auto;
-}
-/*
-  ========================================
-  Typography
-  ========================================
-*/
-h1, h2, h3, h4 {
-  color: #fff;
-}
-h1, h2, h3, h3, p {
-  margin-bottom: 16px;
+h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #028CD5;
+    font-weight: 400;
 }
 h1 {
-  font-size: 36px;
-  line-height: 44px;
-}
-h2 {
-  font-size: 26px;
-  line-height: 44px;
-}
-h3 {
-  font-size: 21px;
+    font-size: 36px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    font-weight: 400;
 }
 h4 {
-  font-size: 18px;
+    margin-left: 5px;
+    font-size: 18px;
+    padding-bottom: 30px;
 }
-p {
-  font-size: 16px;
-}
-.text-offset {
-  font-weight: 200;
-  padding: 0 5px;
-}
-
 /*
-  ========================================
-  Grid
-  ========================================
+    ==========================================
+    Page SKeleton
+    ============================================
 */
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.container,
-.grid {
-  width: 960px;
-  margin: 0 auto;
-}
-.center {
-  margin: 0 auto;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .container {
-  padding: 0 0;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 5px;
 }
-
-.grid,
-.col-1-3,
-.col-2-3 {
-  padding-right: 15px;
+.primary-row,
+.secondary-row {
+    min-width: 960px;
 }
-.col-1-3,
-.col-2-3 {
-  vertical-align: top;
-  display: inline-block;
+.primary-row {
+    background: #0AA6E1;
 }
-.col-1-3 {
-  width: 30%;
+.secondary-row {
+    background: #028CD5;
 }
-.col-2-3 {
-  width: 69.9%;
+.content-row {
+    color: #000;
+    vertical-align: top;
+    background: -webkit-linear-gradient(to right, #F0F0F0 25%,#fff 25%, #fff);
+    background:    -moz-linear-gradient(to right, #F0F0F0 25%,#fff 25%, #fff);
+    background:         linear-gradient(to right, #F0F0F0 25%,#fff 25%, #fff);
+    box-shadow: inset 0 10px 3px -5px #c1c1c1;
 }
-.links{
-  background: #0089CD;
-  text-align: center;
-  display: inline-block;
-  border-radius: 50%;
+#wrapper {
+    margin: 0 auto;
+    width: 100%;
 }
-.links img {
-  padding: 10px;
-  width: 70px;
-  height: 70px;
-}
-
-.row,
-.row-alt {
-  min-width: 960px;
-}
-.row {
-  background: #fff;
-  padding: 66px 0 44px 0;
-}
-.row-alt {
-  background: #fff;
-  /*background: -webkit-linear-gradient(left, #F0F0F0 40%, #fff 40%, #fff 100%);
-  background:    -moz-linear-gradient(left, #F0F0F0 40%, #fff 40%, #fff 100%);
-  background:      -o-linear-gradient(left, #F0F0F0 40%, #fff 40%, #fff 100%);
-  background:         linear-gradient(left, #F0F0F0 40%, #fff 40%, #fff 100%);*/
-
+.letter-box {
+    box-shadow: inset 0 10px 3px -5px #c1c1c1;
+    background: -webkit-linear-gradient(to right, #F0F0F0 30.5%,#fff 30.5%, #fff);
+    background:    -moz-linear-gradient(to right, #F0F0F0 30.5%,#fff 30.5%, #fff);
+    background:         linear-gradient(to right, #F0F0F0 30.5%,#fff 30.5%, #fff);
+    background-size: auto 960px;
+    min-width: 960px;
+    display: flex;
 }
 /*
-  ========================================
-  Navigation
-  ========================================
+    ===================================
+    HEADER
+    ===================================
 */
-.primary-nav {
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: .5px;
-  text-transform: uppercase;
-}
-.nav {
-  text-align: left;
-}
-.nav li {
-  display: inline-block;
-  margin: 0 10px;
-  vertical-align: middle;
-}
-.nav li:first-child {
-  margin-left: 0;
-}
-/*
-  ========================================
-  Header
-  ========================================
-*/
+.nav-header,
 .header {
-  padding: 0;
+    vertical-align: middle;
 }
-.header-secondary {
-  padding: 10px;
-  vertical-align: middle;
+.nav-header {
+    text-align: left;
+    padding: 15px 5px 0 5px;
 }
-.header .container h1 {
-  margin-bottom: 16px;
+.nav-header li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .5px;
 }
-#yahia {
-  display: inline-block;
-  float: right;
-  vertical-align: top;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  margin: 10px 0 10px 0;
+.nav-header li:first-child {
+    margin-left: 0;
 }
-#header-box {
-  margin-top: 30px;
-  display: inline-block;
-  float: left;
+.header {
+    padding: 30px;
 }
-#name {
-  margin-bottom: 5px;
+#hello {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding: 0 2px 15px 2px;
+    margin-bottom: 0;
 }
-/*
-  ========================================
-  Main
-  ========================================
+#resume,
+#portfolio {
+    color: #4FADE4;
+}
+/*  ======================================
+    Content
+    =======================================
 */
-.main-body {
-  text-align: center;
-  width: 960px;
-  margin: 0 auto;
-  padding: 0 15px;
-  color: #000;
+.col-1-3,
+.col-2-3 {
+    vertical-align: top;
+    display: inline-block;
 }
-/*
-  ========================================
-  Footer
-  ========================================
-*/
-.footer,
-.footer-secondary {
-  vertical-align: middle;
+
+.col-1-3 {
+    width: 30%;
 }
-.footer {
-  padding: 30px;
+.col-2-3 {
+    width: 69.9%;
 }
-.footer-secondary {
-  padding: 5px;
-  vertical-align: bottom;
-  margin-bottom: 0;
-}
-.profiles {
-  font-size: 18px;
-}
-.contact p {
-  vertical-align: middle;
-  font-size: 16px;
-  line-height: 21px;
-  margin-bottom: 0;
-}
-.footer-box {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 0;
-  margin: auto;
-  background-color: #efefef;
-  text-align: center;
-}
-/*
-  ========================================
-  Cover Letter aka hello
-  ========================================
-*/
 .letter-meta {
-  font-size: 16px;
-  text-align: left;
+    padding: 15px 5px;
+    flex: 1;
+    box-shadow: -2px 0 4px 0 #c4c4c4;
+    margin: 2px 0;
+    /*border-left: 3px solid #c1c1c1;*/
 }
-.letter-meta h5 {
-  color: #08A1DB;
-  margin: 15px 0;
-}
-
 .letter-meta div {
-  margin-bottom: 30px;
-  border-bottom: 1px solid #aaa;
-}
-.letter-meta div p {
-  font-size: 14px;
-}
-
-.letter-meta div:last-child {
-  border-bottom: 0;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #c4c4c4
 }
 .letter-body {
-  padding: 15px;
+    /*border-right: 2px solid #c4c4c4;*/
+    box-shadow: 0px 0px 4px 2px #c4c4c4;
+    padding: 15px 65px 15px 50px;
+    margin: 2px 0;
 }
 .letter-body p {
-  text-align: left;
-  border-left: 1px solid #aaa;
-  padding-left: 30px;
+    line-height: 20px;
+    margin-bottom: 15px;
 }
-.letter-side {
-  display: inline-block;
-  /* inser float left */
+.letter-body p:last-child {
+    margin-bottom: 0;
 }
-.letter-style {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  width: 33.3%;
+#sign {
+    font-weight: 400;
 }
 
+/*
+    ======================================
+    FOOTER
+    ======================================
+*/
+.top-shadow {
+    box-shadow: 0px -10px 4px -5px #c4c4c4;
+}
+.footer-links {
+    padding: 15px 0;
+    text-align: center;
+}
+.footer-links li {
+    display: inline-block;
+    margin: 0 116px;
+    margin-top: 10px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #028CD5;
+}
+.footer-links img {
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+}
+#linkedin {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+#licircle {
+    position: relative;
+    bottom: 5px;
+}
+.footer-contact {
+    padding: 30px 0 15px 0;
+    text-align: center;
+}
 /*
   ========================================
   Clearfix
