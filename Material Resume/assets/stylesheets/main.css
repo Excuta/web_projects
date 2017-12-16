@@ -230,14 +230,21 @@ h4 {
     text-align: left;
 }
 .links li {
-    text-align: left;
+    text-align: center;
     margin-top: 10px;
-    margin-left: 100px;
-    margin-right: 35px;
     display: inline-block;
 }
+.first {
+    width: 33%;
+    padding-left: 45px;
+}
 .second {
-    margin-left: 800px;
+    width: 33%;
+    padding-left: 20px;
+}
+.third {
+    width: 33%;
+    padding-right: 55px;
 }
 .icons img {
     width: 35px;
