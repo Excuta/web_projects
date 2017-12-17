@@ -1,0 +1,11 @@
+#hello {
+    color: #4FADE4;
+    border-bottom: none;
+}
+#portfolio {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+#hello:hover {
+    color: #fff;
+}
