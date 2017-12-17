@@ -254,6 +254,9 @@ h4 {
     padding: 10px 0 5px 0;
     text-align: center;
 }
+.signature {
+    margin-top: 75px;
+}
 /*
   ========================================
   Clearfix
