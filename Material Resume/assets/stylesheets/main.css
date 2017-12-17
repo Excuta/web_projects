@@ -167,6 +167,7 @@ h4 {
 .col-2-3 {
     vertical-align: top;
     display: inline-block;
+    float: left;
 }
 
 .col-1-3 {
