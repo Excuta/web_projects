@@ -9,3 +9,26 @@
 #hello:hover {
     color: #fff;
 }
+.resume-box {
+    background-size: auto 960px;
+    min-width: 960px;
+    display: flex;
+}
+.resume-skills {
+    padding: 15px 5px;
+    flex: 1;
+    box-shadow: 0 0 4px 2px #c1c1c1;
+    background: #F7F7F7;
+}
+.resume-info {
+    background: #F7F7F7;
+    box-shadow: 0px 0px 4px 2px #c1c1c1;
+    padding: 15px 65px 15px 50px;
+}
+.resume-info div,
+.resume-skills div {
+    margin-bottom: 30px;
+}
+.content-row {
+    background: #F7F7F7;
+}
