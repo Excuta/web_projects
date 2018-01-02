@@ -32,9 +32,6 @@ a:hover {
     font-size: 17px;
     margin-bottom: 15px;
 }
-.project-photo {
-    box-shadow: inset 0 0 5px 5px #000;
-}
 .content-row {
     background: -webkit-linear-gradient(to bottom, #F0F0F0, #fff);
     background:    -moz-linear-gradient(to bottom, #F0F0F0, #fff);
